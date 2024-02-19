@@ -62,6 +62,13 @@ type Host struct {
 	ParentTemplateIDs TemplateIDs `json:"parentTemplates,omitempty"`
 	ProxyID           string      `json:"proxy_hostid,omitempty"`
 	Tags              Tags        `json:"tags,omitempty"`
+
+	TLSConnect     string `json:"tls_connect,omitempty"`
+	TLSAccept      string `json:"tls_accept,omitempty"`
+	TLSIssuer      string `json:"tls_issuer,omitempty"`
+	TLSSubject     string `json:"tls_subject,omitempty"`
+	TLSPSKIdentity string `json:"tls_psk_identity,omitempty"`
+	TLSPSK         string `json:"tls_psk,omitempty"`
 }
 
 // Hosts is an array of Host
